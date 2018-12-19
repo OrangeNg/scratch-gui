@@ -16,6 +16,7 @@ import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
+import imageRecImage from './azure_computer_vision.png';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -26,6 +27,28 @@ import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Image Recognition"
+                description="Name for the 'Image Recognition' extension"
+                id="gui.extension.imageRecExt.name"
+            />
+        ),
+        extensionId: 'imageRecExt',
+        collaborator: 'Mirosoft Azure Computer Vision',
+        iconURL: imageRecImage,
+        insetIconURL: imageRecImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Recognise images using Artificial Intelligence technology"
+                description="Description for the 'Image Recognition' extension"
+                id="gui.extension.imageRecExt.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
+    },
     {
         name: (
             <FormattedMessage
